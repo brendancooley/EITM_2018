@@ -18,7 +18,7 @@ my.tokens <- tokens(my.corpus, remove_numbers=F, remove_punc=T)
 my.dfm <- dfm(my.tokens, tolower=F, remove = c(stopwords("english")), stem = TRUE)
 #my.dfm <- dfm(my.tokens, tolower=F, remove = c(stopwords("english"), "shall", "section"), stem = F)
 
-# keep only words occurring >= 5 times and in >= 3 documents
+# keep only words occurring >= 25 times and in >= 2 documents
 my.trimmed <- dfm_trim(my.dfm, min_termfreq = 25, min_docfreq = 2 )
 
 #pass this to stm()
