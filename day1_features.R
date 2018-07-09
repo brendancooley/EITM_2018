@@ -3,10 +3,12 @@
 #Day 1 of EITM
 
 rm(list=ls())
+
+#need to install() these if not yet present
+
 require(quanteda)
 require(readtext)
 require(preText)
-require(here)
 require(stm)
 
 #lets grab ~24 House Bills as data
@@ -32,6 +34,7 @@ stm.fit <- stm(trim.STM$documents, trim.STM$vocab, K = 20)
 # plot(stm.fit, type="hist")
 
 #Using preText
+# see: http://www.mjdenny.com/getting_started_with_preText.html
 
 # use first 10 documents for example
 documents <- my.corpus[1:10]
