@@ -46,7 +46,7 @@ preprocessed_documents <- factorial_preprocessing(
   documents,
   use_ngrams = TRUE,
   infrequent_term_threshold = 0.2,
-  verbose = FALSE)
+  verbose = T)
 #this takes a little while: 8-10 mins
 
 #let's get the results! (20 seconds or so)
