@@ -4,7 +4,7 @@
 rm(list=ls())
 require(quanteda)
 require(readtext)
-require(here)
+
 
 #lets grab ~24 House Bills as data
 rt <- readtext("house_bills/*")
